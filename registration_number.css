@@ -1,8 +1,68 @@
+body
+{
+    background-image: url('/home/bootcamp/projects/registration_numbers/ferrari.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h1
 {
+    font-size: 5em;
+
     text-align: center;
+
     border: solid black;
     border-radius: 25px;
     background: gray;
-    font-size: 5em;
+}
+#regBox
+{
+    font-size: 16px;
+
+    box-sizing: border-box;
+    width: 270px;
+    margin-top: 3em;
+    margin-left: 21em;
+    padding: 12px 20px 12px 40px;
+
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}
+#regBox[type=text]:focus
+{
+    width: 25%;
+}
+
+#regButton
+{
+    box-sizing: border-box;
+    width: 270px;
+    margin-top: 3em;
+    padding: 12px 20px 12px 40px;
+
+    border: 2px solid #ccc;
+    border-radius: 3em;
+    background-color: #8bc34a;
+    background-repeat: no-repeat;
+}
+
+ul
+{
+    margin-right: 37em;
+    margin-left: 25em;
+    list-style-type: none;
+}
+#regNumList
+{
+
+    box-sizing: border-box;
+    width: 270px;
+    margin-top: 3em;
+    padding: 12px 20px 12px 40px;
+    border: 2px solid #ccc;
+    border-radius: 3em;
+    background-color: #8bc34a;
+    background-repeat: no-repeat;
 }

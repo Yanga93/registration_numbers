@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>regNumbers</title>
-    <link rel="stylesheet" href="registration_number.css">
-  </head>
-  <body>
-    <div class="countainer">
-      <h1>Registration Numbers</h1>
 
+<head>
+  <meta charset="utf-8">
+  <title>regNumbers</title>
+  <link rel="stylesheet" href="registration_number.css">
+</head>
 
-    </div>
-  </body>
+<body>
+  <div class="countainer">
+    <h1>Registration Numbers</h1>
+    <!-- <form class="registration" action="index.html" method="post"> -->
+      <fieldset>
+        <legend><b>Registration Input</b></legend>
+        <!--Registration numbers will go here  -->
+        <input type="text" id="regBox" placeholder="please enter registration number">
+        <!--Registration numbers will be added here  -->
+        <button type="button" id="regButton" onclick="addRegNumbers()">ADD</button>
+      </fieldset>
+      <div id="regList">
+        <fieldset>
+          <legend><b>Registration List</b></legend>
+          <!-- <div class="list-style"> -->
+            <ul class = "regNumList" id="regNumList"></ul>
+
+          </div>
+        </fieldset>
+      </div>
+    <!-- </form> -->
+    <script src="registration_number.js" charset="utf-8"></script>
+  </div>
+</body>
+
 </html>
