@@ -5,7 +5,7 @@ function acceptedRegNum(regNum) {
   var onlyStartsWith = regNum.startsWith("CA") || regNum.startsWith("CY") ||
     regNum.startsWith("CJ");
   return onlyStartsWith;
-  check the validation of acceptedRegNumbers
+  //check the validation of acceptedRegNumbers
   if (!acceptedRegNum(textinput)) {
     // return;
 
@@ -30,6 +30,9 @@ function addRegNumbers() {
   }
 };
 
+var btn = document.querySelector('#regButton');
+btn.addEventListener('click', addRegNumbers);
+
 // Clickable Dropdown starts here
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -51,3 +54,5 @@ function filterFunction() {
     }
   }
 }
+var dropdownbtn = document.querySelector('.dropbtn');
+dropdownbtn.addEventListener('click', myFunction);
