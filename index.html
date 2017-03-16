@@ -10,26 +10,21 @@
 <body>
   <div class="countainer">
     <h1>Registration Numbers</h1>
-    <!-- <form class="registration" action="index.html" method="post"> -->
-    <!-- <fieldset> -->
-    <legend><b>Registration Input</b></legend>
+        <legend><b>Registration Input</b></legend>
     <!--Registration numbers will go here  -->
     <input type="text" id="regBox" placeholder="enter registration">
     <!--Registration numbers will be added here  -->
     <button type="button" id="regButton" onclick="addRegNumbers()">ADD</button>
-    <!-- </fieldset> -->
-    <!-- </fieldset> -->
-    <!--Clickable Dropdown starts here  -->
+        <!--Clickable Dropdown starts here  -->
     <div class="dropdown">
       <button onclick="myFunction()" class="dropbtn">Registration Numbers</button>
       <div id="myDropdown" class="dropdown-content">
-        <a href="#">All</a>
-        <a href="#">Cape Town</a>
-        <a href="#">Bellville</a>
-        <a href="#">Paarl</a>
+        <a href="All">All</a>
+        <a href="CA">Cape Town</a>
+        <a href="CY">Bellville</a>
+        <a href="CJ">Paarl</a>
       </div>
       <div id="regList">
-        <!-- <legend><b>Registration List</b></legend> -->
         <ul class="regNumList" id="regNumList"></ul>
       </div>
     </div>

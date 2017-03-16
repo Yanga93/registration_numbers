@@ -1,5 +1,18 @@
 var textinput = document.getElementById("regBox");
 
+// validation function if the regNum entered is accepted
+function acceptedRegNum(regNum) {
+  var onlyStartsWith = regNum.startsWith("CA") || regNum.startsWith("CY") ||
+    regNum.startsWith("CJ");
+  return onlyStartsWith;
+  check the validation of acceptedRegNumbers
+  if (!acceptedRegNum(textinput)) {
+    // return;
+
+  }
+};
+
+//Main function where I appendChild to my list
 function addRegNumbers() {
   if (textinput.value.length > 0) {
 
@@ -13,6 +26,7 @@ function addRegNumbers() {
     document.getElementById("regNumList").appendChild(node);
     // Empty the textnode
     document.getElementById("regBox").value = "";
+
   }
 };
 
@@ -30,10 +44,10 @@ function filterFunction() {
   div = document.getElementById("myDropdown");
   a = div.getElementsByTagName("a");
   for (i = 0; i < a.length; i++) {
-      if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-          a[i].style.display = "";
-      } else {
-          a[i].style.display = "none";
-      }
+    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
   }
 }
