@@ -11,24 +11,30 @@
   <div class="countainer">
     <h1>Registration Numbers</h1>
     <!-- <form class="registration" action="index.html" method="post"> -->
-      <fieldset>
-        <legend><b>Registration Input</b></legend>
-        <!--Registration numbers will go here  -->
-        <input type="text" id="regBox" placeholder="please enter registration number">
-        <!--Registration numbers will be added here  -->
-        <button type="button" id="regButton" onclick="addRegNumbers()">ADD</button>
-      </fieldset>
-      <div id="regList">
-        <fieldset>
-          <legend><b>Registration List</b></legend>
-          <!-- <div class="list-style"> -->
-            <ul class = "regNumList" id="regNumList"></ul>
-
-          </div>
-        </fieldset>
+    <!-- <fieldset> -->
+    <legend><b>Registration Input</b></legend>
+    <!--Registration numbers will go here  -->
+    <input type="text" id="regBox" placeholder="enter registration">
+    <!--Registration numbers will be added here  -->
+    <button type="button" id="regButton" onclick="addRegNumbers()">ADD</button>
+    <!-- </fieldset> -->
+    <!-- </fieldset> -->
+    <!--Clickable Dropdown starts here  -->
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Registration Numbers</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">All</a>
+        <a href="#">Cape Town</a>
+        <a href="#">Bellville</a>
+        <a href="#">Paarl</a>
       </div>
-    <!-- </form> -->
-    <script src="registration_number.js" charset="utf-8"></script>
+      <div id="regList">
+        <!-- <legend><b>Registration List</b></legend> -->
+        <ul class="regNumList" id="regNumList"></ul>
+      </div>
+    </div>
+  </div>
+  <script src="registration_number.js" charset="utf-8"></script>
   </div>
 </body>
 
