@@ -1,19 +1,6 @@
 var textinput = document.getElementById("regBox");
-
-// validation function if the regNum entered is accepted
-function acceptedRegNum(regNum) {
-  var onlyStartsWith = regNum.startsWith("CA") || regNum.startsWith("CY") ||
-    regNum.startsWith("CJ");
-  return onlyStartsWith;
-  //check the validation of acceptedRegNumbers
-  if (!acceptedRegNum(textinput)) {
-    // return;
-
-  }
-};
-
-//Main function where I appendChild to my list
-function addRegNumbers() {
+var btn = document.querySelector('#regButton');
+btn.addEventListener('click', function() {
   if (textinput.value.length > 0) {
 
     // Create a <li> node
@@ -28,31 +15,25 @@ function addRegNumbers() {
     document.getElementById("regBox").value = "";
 
   }
-};
+});
+var callDropdown = document.querySelector(".Dropdown");
+callDropdown.addEventListener("change", function() {
+  var selectedTown = callDropdown.options[callDropdown.selectedIndex].value;
+  var unoderedList = document.querySelector("#regNumList");
+  var listOfLi = unoderedList.getElementsByTagName('li');
+  for (var i = 0; i < listOfLi.length; i++) {
+    var arrayReg = listOfLi[i].textContent.toUpperCase();
 
-var btn = document.querySelector('#regButton');
-btn.addEventListener('click', addRegNumbers);
 
-// Clickable Dropdown starts here
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
+    if (selectedTown !== "All") {
+      if (selectedTown === arrayReg) {
+        listOfLi[i].style.display = 'block';
+      } else if (selectedTown !== arrayReg) {
+        listOfLi[i].style.display = 'none';
+      }
     } else {
-      a[i].style.display = "none";
+      listOfLi[i].style.display = 'block';
     }
   }
-}
-var dropdownbtn = document.querySelector('.dropbtn');
-dropdownbtn.addEventListener('click', myFunction);
+
+});

@@ -10,24 +10,22 @@
 <body>
   <div class="countainer">
     <h1>Registration Numbers</h1>
-        <legend><b>Registration Input</b></legend>
     <!--Registration numbers will go here  -->
     <input type="text" id="regBox" placeholder="enter registration">
     <!--Registration numbers will be added here  -->
-    <button type="button" id="regButton" >ADD</button>
-        <!--Clickable Dropdown starts here  -->
-    <div class="dropdown">
-      <button type="button" class="dropbtn">Registration Numbers</button>
-      <div id="myDropdown" class="dropdown-content">
-        <a href="All">All</a>
-        <a href="CA">Cape Town</a>
-        <a href="CY">Bellville</a>
-        <a href="CJ">Paarl</a>
+    <button type="button" id="regButton">ADD</button>
+    <!--Dropdown starts here-->
+        <select class="Dropdown" name="listTowns">
+        <option value="All">Registration by Town</option>
+        <option value="All">All</option>
+        <option value="CA">Cape Town</option>
+        <option value="CY">Bellville</option>
+        <option value="CJ">Paarl</option>
+      </select>
       </div>
       <div id="regList">
         <ul class="regNumList" id="regNumList"></ul>
       </div>
-    </div>
   </div>
   <script src="registration_number.js" charset="utf-8"></script>
   </div>

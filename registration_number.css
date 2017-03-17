@@ -59,19 +59,16 @@ li
     margin-top: 3em;
     padding: 12px 20px 12px 40px;
     text-align: center;
-    border: 2px solid #080808;
-    border-radius: 3em;
+    border: 1px solid #080808;
+    border-radius: 1.5em;
     background-color: yellow;
     background-repeat: no-repeat;
 }
-/*Clickable Dropdown starts here */
-.dropbtn
+.Dropdown
 {
     box-sizing: border-box;
     width: 270px;
     margin-top: 3em;
-    margin-top: 1em;
-    margin-left: 25em;
     padding: 12px 20px 12px 40px;
     cursor: pointer;
     border: 2px solid #080808;
@@ -79,56 +76,13 @@ li
     background-color: yellow;
     background-repeat: no-repeat;
 }
-
-.dropbtn:hover,
-.dropbtn:focus
+.hidden
 {
-    background-color: #3e8e41;
-}
-#myInput
-{
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
-    border: none;
-    background-image: url('searchicon.png');
-    background-repeat: no-repeat;
-    background-position: 14px 12px;
-    border-box: box-sizing;
-}
-
-.dropdown
-{
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content
-{
-    position: absolute;
-    /*z-index: 1;*/
     display: none;
-    overflow: auto;
-    min-width: 230px;
-    margin-top: .5em;
-    margin-left: 25em;
-    background-color: #f6f6f6;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
 }
-
-.dropdown-content a
+.regNumList
 {
-    display: block;
-    padding: 12px 16px;
-    text-decoration: none;
-    color: black;
-}
-
-.dropdown a:hover
-{
-    background-color: #cee005;
-}
-
-.show
-{
-    display: block;
+    /*display: flex;*/
+    margin-left: 1em;
+    margin-left: 18em;
 }
